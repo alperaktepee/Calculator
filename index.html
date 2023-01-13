@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Hesap Makinesi - Calculator</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+ 
+</head>
+<body style="background-color:#323732;">
+
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <form action="#" name="calculator" class="main mt-5">
+              <input type="text" class="display form-control" name="display" id="display"><br>
+              <input type="button" class="btn btn-danger" value="+" onclick="document.calculator.display.value+='+'">
+              <input type="button" class="btn btn-danger ms-2" value="-" onclick="document.calculator.display.value+='-'">
+              <input type="button" class="btn btn-danger ms-2" value="*" onclick="document.calculator.display.value+='*'" >
+              <input type="button" class="btn btn-danger ms-2" value="/" onclick="document.calculator.display.value+='/'" ><br><br>
+              <input type="button" class="btn btn-danger" value="6" onclick="alti()">
+              <input type="button" class="btn btn-danger ms-2" value="7" onclick="yedi()">
+              <input type="button" class="btn btn-danger ms-2" value="8" onclick="sekiz()">
+              <input type="button" class="btn btn-danger ms-2" value="9" onclick="dokuz()"><br><br>
+              <input type="button" class="btn btn-danger" value="2" onclick="iki()">
+              <input type="button" class="btn btn-danger ms-2" value="3" onclick="uc()">
+              <input type="button" class="btn btn-danger ms-2" value="4" onclick="dort()">
+              <input type="button" class="btn btn-danger ms-2" value="5"onclick="bes()"><br><br>
+              <input type="button" class="btn btn-danger" value="." onclick="nokta()">
+              <input type="button" class="btn btn-danger ms-2" value="00" onclick="document.calculator.display.value+='00'">
+              <input type="button" class="btn btn-danger ms-2" value="0" onclick="sifir()">
+              <input type="button" class="btn btn-danger ms-2" value="1" onclick="bir()"><br><br>
+              <input type="button" class="btn btn-danger" id="del" value="DEL" onclick="silmeTusu()">
+              <input type="button" class="btn btn-danger ms-2" value="C" id="clear">
+              <input type="button" class="btn btn-danger ms-2" value="%" onclick="document.calculator.display.value+='%'">
+              <input type="button" class="btn btn-danger ms-2" value="=" onclick="document.calculator.display.value=eval(calculator.display.value)">
+
+
+
+
+
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="main.js"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
